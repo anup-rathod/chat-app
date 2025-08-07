@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
 		// ✅ ADD localhost:3001 or whatever port your React app runs on
-		origin: ["http://localhost:3000", "http://localhost:3001"],
+		origin: ["https://chat-app-760b.onrender.com"],
 		methods: ["GET", "POST"],
 	},
 });
