@@ -16,7 +16,7 @@ export const SocketContextProvider = ({ children }) => {
 	useEffect(() => {
 		if (authUser) {
 			// ✅ CHANGE THIS: Use localhost instead of render URL
-			const socket = io("https://chat-app-760b.onrender.com/", {
+			const socket = io("http://localhost:5000", {
 				query: {
 					userId: authUser._id,
 				},
